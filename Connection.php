@@ -35,7 +35,8 @@ if(mysqli_query($con,$database)){
                                     name varchar(50) not null,
                                     email varchar(20) not null,
                                     password varchar(10) not null,
-                                    city varchar(50) not null)";
+                                    city varchar(50) not null,
+                                    mobile int(10) not null)";
 <!--check the condition maually table created confirmation or not-->
 if(mysqli_query($con,$table)){
   echo"TABLE CREATED";
