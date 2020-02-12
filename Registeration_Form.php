@@ -1,7 +1,39 @@
 <html>
   <head>
     <tittle>Registeration Form</tittle>
-  </head>
+<!--javascript cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--Form Validation using JavaScript-->
+<script>
+    function ValidateForm(){
+    var name=document.forms["myForm"]["name"].value;
+    var email=document.forms["myForm"]["email"].value;
+    var password=document.forms["myForm"]["password"].value;
+    var city=document.forms["myForm"]["city"].value;
+<!--conditions with alert box-->
+    if(name=="" && email=="" && password=="" && city==""){
+        alert("all field is required");
+        return false;
+    }
+    if(name==""){
+    alert("name required");
+    return false;
+    }
+    if(email==""){
+    alert("email required");
+    return false;
+    }
+    if(password==""){
+    alert("password required");
+    return false;
+    }
+    if(city==""){
+    alert("city required");
+    return false;
+    }
+</script>
+    </head>
 <body>
 <!--heading -->
   <div class="heading">
@@ -9,7 +41,7 @@
   </div>
 
 <!--here is start to make the form and their different fields-->
-  <form action="link-page.php" method="POST">
+  <form name="myForm" action="link-page.php" method="POST" onsubmit="ValidateForm()">
     Name <input type="text" name="name" placeholder="Enter Your Name">
     Email <input type="email" name="email" placeholder="Enter Your Email">
     Password <input type="password" name="password" placeholder="Enter Your Password">
