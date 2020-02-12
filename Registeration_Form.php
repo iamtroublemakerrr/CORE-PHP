@@ -19,10 +19,12 @@
          <option value="punjab">Punjab</option>
          </select>
     Mobile <input type="text" name="mobile" placeholder="Enter Your Mobile">
-    
+  </form>
+  
+  
 <!--here is the submit button-->
   <input type="submit" name="submit" value="submit">
-  </form>
+  
   
 </body>
 </html>
