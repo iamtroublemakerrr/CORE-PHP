@@ -15,7 +15,7 @@
 <!--end connection part-->
 
 
-
+ 
 
 <!--start create a database-->
   $database="CREATE DATABASE databasename";      //here after write this line database has to be created//
