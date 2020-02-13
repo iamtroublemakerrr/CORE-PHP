@@ -11,8 +11,10 @@
     var email=document.forms["myForm"]["email"].value;
     var password=document.forms["myForm"]["password"].value;
     var city=document.forms["myForm"]["city"].value;
+    var mobile=document.forms["myForm"]["mobile"].value;
+    var image=document.forms["myForm"]["image"].value;
 <!--conditions with alert box-->
-    if(name=="" && email=="" && password=="" && city==""){
+    if(name=="" && email=="" && password=="" && city=="" && mobile=="" && image==""){
         alert("all field is required");
         return false;
     }
@@ -30,6 +32,14 @@
     }
     if(city==""){
     alert("city required");
+    return false;
+    }
+    if(mobile==""){
+    alert("mobile required");
+    return false;
+    }
+    if(image==""){
+    alert("image required");
     return false;
     }
 </script>
@@ -51,6 +61,7 @@
          <option value="punjab">Punjab</option>
          </select>
     Mobile <input type="text" name="mobile" placeholder="Enter Your Mobile">
+    Image <input type="file" name="image" placeholder="Upload Image">    //here we take a image and upload in database and also save in folder//
   </form>
   
   
