@@ -39,8 +39,8 @@
             <td><?php echo $row['password'];?></td>
             <td><?php echo $row['mobile'];?></td>
             <td><?php echo $row['image'];?></td>
-            <td><a href="Edit.php?id=<?php eho $row['id'];?>">Edit</a></td>        //here is we ref the edit page and then go to fo edit//
-            <td><a href="Delete.php?id=<?php echo $row['id'];?>">Delete</a></td>   //here is delete query page where they click the delete row has to be deleted//
+            <td><a href="Edit.php?id=<?php eho $row['id'];?>">Edit</a></td>        //here is we ref the edit page and then go to edit page through pass the['id']//
+            <td><a href="Delete.php?id=<?php echo $row['id'];?>">Delete</a></td>   //here is delete query page where they click the delete row has to be deleted and go throgh the ['id']//
           </tr>
        <?php
        }
